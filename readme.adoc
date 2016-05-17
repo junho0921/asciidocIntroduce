@@ -62,3 +62,13 @@ http://http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#tables[详�
 === 修改配置
 
 您可以打开`action/index.js`文件进行配置
+
+== 补充说明
+
+由于`asciidoctor.js`模块对asciidoc文件的转化有缺陷的, 只有<body>标签内的内容, 欠缺了很多东西.
+
+我们需要对样式和脚本的引用补充完整, 所以`action/basic.html`是对样式和脚本的引用.
+
+`action/index.js`是node运行的代码, 内容是拼接`action/basic.html`的内容与asciidoc文件内容生成完成的html文件.
+
+`js/fix.js`是对样式的调整, 包括固定目录在窗口左侧, 内容居中等等.

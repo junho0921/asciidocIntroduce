@@ -28,7 +28,7 @@ $(function(){
 		ol.after(table).remove();
 	});
 
-	/*ÐÞÕýDOM½á¹¹ÒÔÂú×ã¸ñÊ½ÒªÇó*/
+	/*ï¿½ï¿½ï¿½ï¿½DOMï¿½á¹¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½Òªï¿½ï¿½*/
 	$('<div>', {id: 'content'})	.append(
 		$('.sect1')
 	).prependTo('body');
@@ -40,6 +40,6 @@ $(function(){
 		.append(
 			$('#toc').attr('class', 'toc2')
 		).prependTo('body');
-	/*ÐÞÕýtitle*/
+	/*ï¿½ï¿½ï¿½ï¿½title*/
 	$('title').text($('h1').text());
 });
