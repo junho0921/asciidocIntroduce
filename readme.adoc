@@ -1,0 +1,64 @@
+= AsciiDoc使用手册
+hejj1@belink.com
+:toc: left
+:toclevels: 3
+:toc-title: 目录
+:numbered:
+:sectanchors:
+:sectlinks:
+:sectnums:
+
+:imagesdir: ./images
+:stylesdir: ./styles
+
+== AsciiDoc简介
+
+AsciiDoc是一个非常不错的文档格式化工具，使用它可以将一般的文本文档转换成 HTML 网页、Man 手册、以及 DocBook 等等。其输出的文档不仅可以包含常规的内容，而且对于数学公式或者音乐简谱同样能够胜任。
+
+== 安装
+
+=== IDE插件
+
+开发工具webstorm与sublime都有插件支持AsciiDoc的编写, 提供格式与预览效果展示.
+
+建议安装这些插件, 帮助我们以更好的格式编写文档.
+
+=== 浏览器插件
+
+想直接预览`.adoc`文件? 请打开chrome的扩展程序, 在chrome的网上商店里下载`Asciidoctor.js Live Preview`这款插件吧, 成功安装后需要设置一下该插件,
+
+请打开chrome的扩展程序, 选择`Asciidoctor.js Live Preview`插件配置的`允许访问文件网址`, 如图所示:
+
+****
+image::asciidoc安装图.png[]
+****
+
+之后我们在浏览器打开`.adoc`文件就可以直接预览效果, 方便编辑!
+
+=== 安装nodejs与插件
+
+生成html文件需要nodejs帮忙.
+
+请安装好nodejs, 后安装模块`npm i asciidoctor.js`.
+
+== AsciiDoc格式技巧
+
+http://http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#tables[详情请看官网]
+
+== AsciiDoc格式技巧示范
+
+想直接上手, 建议看一下`example`文件夹里的示范, 把看到的效果直接搬运代码格式来使用就好了!
+
+== 把AsciiDoc文件转换为html文件
+
+=== 流程
+
+. 假设AsciiDoc的目录在`c:\asciidoc\`
+. 把本文件夹的所有内容都拷贝到该文件夹里, 打开命令程序`cmd`,
+. 执行`cd c:\asciidoc\`, 转到AsciiDoc的文件夹.
+. 执行`node action`.
+. 看到文件夹里生成了html, 打开并有预览的样式, 表示完成!
+
+=== 修改配置
+
+您可以打开`action/index.js`文件进行配置
