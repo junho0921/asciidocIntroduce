@@ -39,7 +39,7 @@ image::asciidoc安装图.png[]
 
 生成html文件需要nodejs帮忙.
 
-请安装好nodejs, 后安装模块`npm i asciidoctor.js`.
+请安装好nodejs, 后在您编辑asciidoc文档的文件夹安装模块`npm i asciidoctor.js`.
 
 == AsciiDoc格式技巧
 
